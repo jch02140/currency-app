@@ -1,0 +1,59 @@
+.App {
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+}
+
+.App-header {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+
+}
+.row + .row {
+    margin-top: 1rem;
+}
+
+.dropdown-menu.show {
+  max-height: 210px;
+  overflow-y: scroll;
+}
+
+input#fromDate,
+input#toDate {
+  width: 100%;
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+          user-select: none;
+  background-color: transparent;
+  border: 1px solid #6c757d;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+
+.react-datepicker-wrapper,
+button#base_currency,
+button#to_currency {
+  width: 100%;
+}
+
+.table-responsive {
+  margin-top: 1rem;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+table#rateTable th:nth-child(n+3) {
+  display: none;
+}
