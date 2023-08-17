@@ -83,10 +83,12 @@ function App() {
   // Get exchange rates info from selected values
   async function getRatesFromDates(startDate, endDate, baseCurrency, targetCurrency) {
     try {
-      let response = await fetch('https://api.exchangeratesapi.io/history?start_at=' +
-                                    startDate + '&end_at=' + endDate + '&base=' + baseCurrency + '&symbols=' + targetCurrency);
+      let response = await fetch('https://api.freecurrencyapi.com/v1/historical?apikey=fca_live_dVnEVN0DUOXtguMqLFKgVo89NgvQ55zVhezUWlbX&base_currency=' +
+                                    baseCurrency + '&currencies=' + targetCurrency + '&date_from=' + startDate + '&date_to=' + endDate);
+      // let response = await fetch('http://api.exchangeratesapi.host/timeseries?start_at=' +
+      //                               startDate + '&end_at=' + endDate + '&base=' + baseCurrency + '&symbols=' + targetCurrency);
       let jsonData = await response.json();
-      return jsonData.rates;
+      return jsonData.data;
      } catch(error) {
       console.error(error);
     }
