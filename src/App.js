@@ -32,6 +32,7 @@ function App() {
     { code: 'hr', title: 'Croatian Kuna', curr_code: 'HRK'},
     { code: 'cz', title: 'Czech Koruna', curr_code: 'CZK'},
     { code: 'dk', title: 'Danish Krone', curr_code: 'DKK'},
+    { code: 'eu', title: 'Euro', curr_code: 'EUR'},
     { code: 'hk', title: 'Hong Kong Dollar', curr_code: 'HKD'},
     { code: 'hu', title: 'Hungarian Forint', curr_code: 'HUF'},
     { code: 'is', title: 'Icelandic Krona', curr_code: 'ISK'},
